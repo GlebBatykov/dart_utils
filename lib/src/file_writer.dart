@@ -1,6 +1,8 @@
 part of dart_utils;
 
 class FileWriter {
+  const FileWriter();
+
   Future<void> writeString(String path, String value) async {
     final file = File.fromUri(Uri.file(path));
 
